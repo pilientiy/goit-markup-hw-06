@@ -171,8 +171,10 @@ li {
 }
 
 .mob-menu{
-  width: 320px;
-  height: 640px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   position: fixed;
   top:0px;
@@ -248,12 +250,16 @@ li {
   color: #404bbf;
 }
 
+.main-address {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mail-tel-menu {
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 24px;
-  margin-top: 168px;
   margin-bottom: 48px;
 }
 
@@ -300,7 +306,7 @@ li {
 }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
   .mail-tel {
   display: flex;
   flex-direction: row;
@@ -323,7 +329,7 @@ li {
     url(../images/mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 188px 0;
+  padding: 72px 0;
   max-width: 1440px;
   background-position: center;
   margin: 0px auto;
@@ -352,7 +358,7 @@ li {
   line-height: 40px;
   letter-spacing: 0.72px;
   margin: 0px auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   text-align: center;
 }
 
@@ -364,6 +370,7 @@ li {
   font-weight: 700;
   line-height: 60px; 
   letter-spacing: 1.12px;
+  margin-bottom: 36px;
  } 
 
  .first-section{
@@ -372,6 +379,7 @@ li {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/tab.jpg);
+    padding: 112px 0;
  }
 
  @media (min-device-pixel-ratio: 2),
@@ -387,13 +395,18 @@ li {
 }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
   .first-section{
        background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);    
+    url(../images/people-office.jpg);
+    padding: 188px 0;    
+  }
+
+  .main-header{
+    margin-bottom: 48px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -552,7 +565,7 @@ li {
   
 }
   
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
   .container {
     max-width: 1158px;
     padding: 0 15px 0 15px;
@@ -612,6 +625,14 @@ li {
   gap:72px;
 }
 
+@media screen and (min-width:320px){
+  .employees{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width:768px){
   .employees{
     gap: 24px;
@@ -619,7 +640,7 @@ li {
   }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
   .employees{
     display: flex;
     flex-direction: row;
@@ -732,7 +753,7 @@ li {
 }
 
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
   .portfolio-list{
     width: calc((100% - 48px) / 3);
   }
@@ -873,7 +894,7 @@ li {
 }
 
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
   .footer-position{
     padding: 0;
     flex-direction: row;
@@ -902,6 +923,7 @@ li {
   outline: 2px solid red;
   height: 24px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .social-media-list {
@@ -1018,7 +1040,6 @@ li {
   width: 24px;
   height: 24px;
   margin-right: 24px;
-  margin-left: 16px;
 }
 
 .footer-form {
