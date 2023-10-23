@@ -94,71 +94,73 @@
       <!-- MOB MENU -->
 
       <div class="mob-menu iis-open">
-        <button type="button" class="close-btn">
-          <svg class="close-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-          </svg>
-        </button>
+        <div class="container menu-wrapper">
+          <button type="button" class="close-btn">
+            <svg class="close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
 
-        <nav class="main-navigation-menu">
-          <ul class="navigation-spc-menu">
-            <li>
-              <a class="link-header-menu" href="./index.html">Studio</a>
-            </li>
-            <li><a class="link-header-menu" href="">Portfolio</a></li>
-            <li><a class="link-header-menu" href="">Contacts</a></li>
-          </ul>
-        </nav>
+          <nav class="main-navigation-menu">
+            <ul class="navigation-spc-menu">
+              <li>
+                <a class="link-header-menu" href="./index.html">Studio</a>
+              </li>
+              <li><a class="link-header-menu" href="">Portfolio</a></li>
+              <li><a class="link-header-menu" href="">Contacts</a></li>
+            </ul>
+          </nav>
 
-        <address class="data main-address">
-          <ul class="list">
-            <li class="first-point-contact-list-menu">
-              <a class="link-address" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="second-point-contact-list-menu">
-              <a class="link-address" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <address class="data main-address">
+            <ul class="list">
+              <li class="first-point-contact-list-menu">
+                <a class="link-address" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="second-point-contact-list-menu">
+                <a class="link-address" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
 
-        <div class="wrapper-second-socialmedia">
-          <ul class="social-media-list-menu">
-            <li class="sm-point">
-              <a class="icon-link-footer" href="">
-                <svg class="first-sm-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
+          <div class="wrapper-second-socialmedia">
+            <ul class="social-media-list-menu">
+              <li class="sm-point">
+                <a class="icon-link-footer" href="">
+                  <svg class="first-sm-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="sm-point">
-              <a class="icon-link-footer" href="">
-                <svg class="first-sm-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="sm-point">
+                <a class="icon-link-footer" href="">
+                  <svg class="first-sm-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="sm-point">
-              <a class="icon-link-footer" href="">
-                <svg class="first-sm-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="sm-point">
+                <a class="icon-link-footer" href="">
+                  <svg class="first-sm-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="sm-point">
-              <a class="icon-link-footer" href="">
-                <svg class="first-sm-icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <li class="sm-point">
+                <a class="icon-link-footer" href="">
+                  <svg class="first-sm-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -241,10 +243,7 @@
           <ul class="list employees">
             <li class="list-point">
               <img
-                srcset="
-                  ./images/mark_guerrero.jpg   1x,
-                  ./images/mark_guerrero2x.jpg 2x
-                "
+                srcset="./images/mark_guerrero.jpg 1x, ./images/mark2x.jpg 2x"
                 src="./images/mark_guerrero.jpg"
                 alt="product designer"
                 width="264"
@@ -452,7 +451,7 @@
               <div class="img-container">
                 <img
                   srcset="
-                    /images/banking_up.jpg     1x,
+                    ./images/banking_up.jpg    1x,
                     ./images/banking_app2x.jpg 2x
                   "
                   src="./images/banking_up.jpg"
@@ -476,8 +475,8 @@
               <div class="img-container">
                 <img
                   srcset="
-                    /images/cashless_payment.jpg 1x,
-                    ./images/c_p2x.jpg           2x
+                    ./images/cashless_payment.jpg 1x,
+                    ./images/c_p2x.jpg            2x
                   "
                   src="./images/cashless_payment.jpg"
                   alt="cashless payment"
@@ -499,7 +498,7 @@
             <li class="portfolio-list">
               <div class="img-container">
                 <img
-                  srcset="/images/meditation_app.jpg 1x, ./images/m_a2x.jpg 2x"
+                  srcset="./images/meditation_app.jpg 1x, ./images/m_a2x.jpg 2x"
                   src="./images/meditation_app.jpg"
                   alt="meditation app"
                   width="360"
@@ -520,7 +519,7 @@
             <li class="portfolio-list">
               <div class="img-container">
                 <img
-                  srcset="/images/taxi_service.jpg 1x, ./images/t_s2x.jpg 2x"
+                  srcset="./images/taxi_service.jpg 1x, ./images/t_s2x.jpg 2x"
                   src="./images/taxi_service.jpg"
                   alt="taxi service"
                   width="360"
@@ -542,8 +541,8 @@
               <div class="img-container">
                 <img
                   srcset="
-                    /images/screen_illustrations.jpg 1x,
-                    ./images/s_i2x.jpg               2x
+                    ./images/screen_illustrations.jpg 1x,
+                    ./images/s_i2x.jpg                2x
                   "
                   src="./images/screen_illustrations.jpg"
                   alt="screen illustrations"
@@ -567,7 +566,7 @@
             <li class="portfolio-list">
               <div class="img-container">
                 <img
-                  srcset="/images/online_courses.jpg 1x, ./images/o_c2x.jpg 2x"
+                  srcset="./images/online_courses.jpg 1x, ./images/o_c2x.jpg 2x"
                   src="./images/online_courses.jpg"
                   alt="online courses"
                   width="360"
@@ -753,9 +752,11 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="check-link-tekst">Privacy Policy</a></label
-            >
+              <div class="check-text-wrapper">
+                I accept the terms and conditions of the
+                <a href="" class="check-link-tekst">Privacy Policy</a>
+              </div>
+            </label>
           </div>
 
           <button type="submit" class="form-btn">Send</button>
